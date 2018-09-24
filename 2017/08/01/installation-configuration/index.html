@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="寒雨" />
+
+
+
+<meta name="keywords" content="博客,开源项目">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MiHo-主题安装和配置详情">
+<meta property="og:url" content="https://hanyuzheng.github.io/2017/08/01/installation-configuration/index.html">
+<meta property="og:site_name" content="寒雨">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://oerolc7og.bkt.clouddn.com/images/miho/theme/github.jpg">
+<meta property="og:updated_time" content="2018-09-16T22:56:58.490Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MiHo-主题安装和配置详情">
+<meta name="twitter:image" content="http://oerolc7og.bkt.clouddn.com/images/miho/theme/github.jpg">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="寒雨" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/green/pace-theme-flat-top.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>MiHo-主题安装和配置详情 | 寒雨</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">寒雨</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">凄凄寒雨</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="true" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:&#49;&#50;&#56;&#51;&#51;&#48;&#49;&#57;&#49;&#50;&#64;&#113;&#113;&#46;&#99;&#111;&#109;" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/hanyuzheng" title="GitHub"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/开源项目/">开源项目</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.coding.me/yelee/">Yelee</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">Unity3D初学者，做做笔记开发游戏的样子</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">寒雨</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">寒雨</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">凄凄寒雨</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:&#49;&#50;&#56;&#51;&#51;&#48;&#49;&#57;&#49;&#50;&#64;&#113;&#113;&#46;&#99;&#111;&#109;" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/hanyuzheng" title="GitHub"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-installation-configuration" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/01/installation-configuration/" class="article-date">
+      <time datetime="2017-07-31T16:00:00.000Z" itemprop="datePublished">2017-08-01</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MiHo-主题安装和配置详情
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/开源项目/">开源项目</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开源项目/">开源项目</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><img src="http://oerolc7og.bkt.clouddn.com/images/miho/theme/github.jpg" alt="miho"><br><a id="more"></a></p>
+<h3 id="一-主题简介主题简介主题简介主题简介"><a href="#一-主题简介主题简介主题简介主题简介" class="headerlink" title="一. 主题简介主题简介主题简介主题简介"></a>一. 主题简介主题简介主题简介主题简介</h3><p>&emsp;&emsp;MiHo 是一款单栏响应式的<a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>主题；基于 Hexo 3.0+ 制作，兼容移动端浏览；主题的代码托管在<a href="https://github.com/WongMinHo/hexo-theme-miho" target="_blank" rel="noopener">GitHub</a>上，<br>欢迎Star和Fork；如遇到问题或发表建议，可以提<a href="https://github.com/WongMinHo/hexo-theme-miho/issues" target="_blank" rel="noopener">Issues</a>，也可以在博客中留言给我，另外,喜欢的话不妨给个 Star。</p>
+<h3 id="二-安装"><a href="#二-安装" class="headerlink" title="二. 安装"></a>二. 安装</h3><h4 id="2-1-安装主题"><a href="#2-1-安装主题" class="headerlink" title="2.1 安装主题"></a>2.1 安装主题</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/WongMinHo/hexo-theme-miho.git themes/miho</span><br></pre></td></tr></table></figure>
+<p>MiHo 主题需要Hexo 3.0或以上版本，请先升级。</p>
+<h4 id="2-2-更新"><a href="#2-2-更新" class="headerlink" title="2.2 更新"></a>2.2 更新</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/miho</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<h4 id="2-3-依赖安装"><a href="#2-3-依赖安装" class="headerlink" title="2.3 依赖安装"></a>2.3 依赖安装</h4><p>如下依赖如果已经安装，请看配置介绍。</p>
+<h5 id="Json-content"><a href="#Json-content" class="headerlink" title="Json-content"></a>Json-content</h5><p>生成站点文章静态数据，用于站内搜索。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-json-content --save</span><br></pre></td></tr></table></figure></p>
+<h3 id="三-站点配置"><a href="#三-站点配置" class="headerlink" title="三. 站点配置"></a>三. 站点配置</h3><p>站点配置文件<code>_config.yml</code>在hexo根目录下。</p>
+<h4 id="3-1-启用主题"><a href="#3-1-启用主题" class="headerlink" title="3.1 启用主题"></a>3.1 启用主题</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`theme: miho`</span><br></pre></td></tr></table></figure>
+<h4 id="3-2-网站基本配置"><a href="#3-2-网站基本配置" class="headerlink" title="3.2 网站基本配置"></a>3.2 网站基本配置</h4><p>以下配置是站点的全局配置，更多配置，请<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">查看</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: MinHow<span class="string">'s Blog</span></span><br><span class="line"><span class="string">subtitle: 网站副标题</span></span><br><span class="line"><span class="string">description: 专注 WEB 开发的技术博客</span></span><br><span class="line"><span class="string">author: MinHow</span></span><br><span class="line"><span class="string">language: 网站使用的语言</span></span><br><span class="line"><span class="string">timezone: 网站时区</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="3-3-jsonContent配置"><a href="#3-3-jsonContent配置" class="headerlink" title="3.3 jsonContent配置"></a>3.3 jsonContent配置</h4><p>详细的配置请查看<a href="https://github.com/alexbruno/hexo-generator-json-content" target="_blank" rel="noopener">hexo-generator-json-content</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">jsonContent:</span><br><span class="line">  meta: <span class="literal">false</span></span><br><span class="line">  pages: <span class="literal">false</span></span><br><span class="line">  posts:</span><br><span class="line">    title: <span class="literal">true</span></span><br><span class="line">    date: <span class="literal">true</span></span><br><span class="line">    path: <span class="literal">true</span></span><br><span class="line">    text: <span class="literal">false</span></span><br><span class="line">    raw: <span class="literal">false</span></span><br><span class="line">    content: <span class="literal">false</span></span><br><span class="line">    slug: <span class="literal">false</span></span><br><span class="line">    updated: <span class="literal">false</span></span><br><span class="line">    comments: <span class="literal">false</span></span><br><span class="line">    link: <span class="literal">false</span></span><br><span class="line">    permalink: <span class="literal">false</span></span><br><span class="line">    excerpt: <span class="literal">false</span></span><br><span class="line">    categories: <span class="literal">false</span></span><br><span class="line">    tags: <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="四-主题配置"><a href="#四-主题配置" class="headerlink" title="四. 主题配置"></a>四. 主题配置</h3><p>编辑主题配置文件，<code>themes/miho/_config.yml</code>。</p>
+<h4 id="4-1-属性"><a href="#4-1-属性" class="headerlink" title="4.1 属性"></a>4.1 属性</h4><p>下面将介绍几个比较重要的配置。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo-theme-miho</span></span><br><span class="line"><span class="comment"># https://github.com/wongminho/hexo-theme-miho</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon of your site | 网站icon</span></span><br><span class="line">favicon: /favicon.ico</span><br><span class="line"></span><br><span class="line"><span class="comment"># Header</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Keywords of your site | 网站关键字</span></span><br><span class="line">keywords: MinHow,MinHow<span class="string">'s Blog</span></span><br><span class="line"><span class="string"># Head headline | 头部标题</span></span><br><span class="line"><span class="string">header_title: MinHow'</span>s Blog</span><br><span class="line"><span class="comment"># Head description | 头部描述</span></span><br><span class="line">header_description: 一个专注 WEB 开发的技术博客</span><br><span class="line"><span class="comment"># Link to your logo | logo地址</span></span><br><span class="line">logo: images/logo.png</span><br><span class="line"><span class="comment"># Link to your banner_img | 首页banner图地址</span></span><br><span class="line">banner_img: images/banner.jpg</span><br><span class="line"><span class="comment"># Menu setting | 菜单设置</span></span><br><span class="line"><span class="comment">#  name:                  Font Awesome icon | Font Awesome 图标</span></span><br><span class="line"><span class="comment">#    title: Home          Title | 标题</span></span><br><span class="line"><span class="comment">#    url: //minhow.com    Url, absolute or relative path | 链接，绝对或相对路径</span></span><br><span class="line"><span class="comment">#    target: true         Whether to jump out | 是否跳出</span></span><br><span class="line">menu:</span><br><span class="line">  home:</span><br><span class="line">    title: Home</span><br><span class="line">    url: /</span><br><span class="line">    target: <span class="literal">false</span></span><br><span class="line">  archive:</span><br><span class="line">    title: Archives</span><br><span class="line">    url: /archives</span><br><span class="line">    target: <span class="literal">false</span></span><br><span class="line">  user:</span><br><span class="line">    title: About</span><br><span class="line">    url: /about</span><br><span class="line">    target: <span class="literal">false</span></span><br><span class="line"><span class="comment"># Social setting, use to display social information | 社交设置，用来展示社交信息</span></span><br><span class="line"><span class="comment">#  name:                  Font Awesome icon | Font Awesome 图标</span></span><br><span class="line"><span class="comment">#    title: Home          Icon title | 图标标题</span></span><br><span class="line"><span class="comment">#    url: //minhow.com    Url, absolute or relative path | 链接，绝对或相对路径</span></span><br><span class="line"><span class="comment">#    target: true         Whether to jump out | 是否跳出</span></span><br><span class="line">social:</span><br><span class="line">  home:</span><br><span class="line">    title: MinHow</span><br><span class="line">    url: //minhow.com</span><br><span class="line">    target: <span class="literal">true</span></span><br><span class="line">  github:</span><br><span class="line">    title: Github</span><br><span class="line">    url: //github.com/wongminho</span><br><span class="line">    target: <span class="literal">true</span></span><br><span class="line">  weibo:</span><br><span class="line">    title: Weibo</span><br><span class="line">    url: //weibo.com/WongMinHo</span><br><span class="line">    target: <span class="literal">true</span></span><br><span class="line">  twitter:</span><br><span class="line">    title: Twitter</span><br><span class="line">    url: //twitter.com/huangminhow</span><br><span class="line">    target: <span class="literal">true</span></span><br><span class="line">  <span class="comment">#qq:</span></span><br><span class="line">  <span class="comment">#weixin:</span></span><br><span class="line">  <span class="comment">#snapchat:</span></span><br><span class="line">  <span class="comment">#telegram:</span></span><br><span class="line">  <span class="comment">#mail:</span></span><br><span class="line">  <span class="comment">#facebook:</span></span><br><span class="line">  <span class="comment">#google:</span></span><br><span class="line">  <span class="comment">#linkedin:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Content</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Excerpt length | 摘录长度</span></span><br><span class="line">excerpt_length: 190</span><br><span class="line"><span class="comment"># Excerpt link | 摘录链接</span></span><br><span class="line">excerpt_link: more&gt;&gt;</span><br><span class="line"><span class="comment"># New window open link | 新窗口打开文章</span></span><br><span class="line">open_new_link: <span class="literal">false</span></span><br><span class="line"><span class="comment"># Article default cover picture，size：350*150 | 文章默认封面图，尺寸：350*150</span></span><br><span class="line">cover_picture: images/banner.jpg</span><br><span class="line"><span class="comment"># Open background particles | 开启背景粒子</span></span><br><span class="line">open_bg_particle: <span class="literal">true</span></span><br><span class="line"><span class="comment"># Open animation in homepage and head | 开启主页及头部动画</span></span><br><span class="line">open_animation: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Article</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Open toc | 是否开启toc</span></span><br><span class="line">toc: <span class="literal">true</span></span><br><span class="line"><span class="comment"># Open share | 是否开启分享</span></span><br><span class="line">share: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Style customization | 样式定制</span></span><br><span class="line">style:</span><br><span class="line">  <span class="comment"># Main color tone | 主色调</span></span><br><span class="line">  main_color: <span class="string">'#0cc'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Comments | 评论</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 畅言，输入appid和appkey</span></span><br><span class="line">changyan_appid: <span class="literal">false</span></span><br><span class="line">changyan_appkey: <span class="literal">false</span></span><br><span class="line"><span class="comment"># 友言，输入id</span></span><br><span class="line">youyan_id: <span class="literal">false</span></span><br><span class="line"><span class="comment"># disqus</span></span><br><span class="line">disqus: <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Analytics | 分析</span></span><br><span class="line"><span class="comment"># 站长分析，输入站点id</span></span><br><span class="line">cnzz_analytics: <span class="literal">false</span></span><br><span class="line"><span class="comment"># 百度分析，输入key值</span></span><br><span class="line">baidu_analytics: <span class="literal">false</span></span><br><span class="line"><span class="comment"># google analytics | google分析</span></span><br><span class="line">google_analytics: <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Footer</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Access statistics | “不蒜子”访问量统计</span></span><br><span class="line">access_counter:</span><br><span class="line">  on: <span class="literal">true</span></span><br><span class="line">  site_uv: 总访客数：</span><br><span class="line">  site_pv: 总访问量：</span><br><span class="line"></span><br><span class="line"><span class="comment"># Copyright Information | 版权信息</span></span><br><span class="line">copyright: 2017 MinHow</span><br></pre></td></tr></table></figure></p>
+<h4 id="4-2-文章封面图"><a href="#4-2-文章封面图" class="headerlink" title="4.2 文章封面图"></a>4.2 文章封面图</h4><p>文章默认封面图，尺寸：350*150，当文章基本配置没有<code>cover_picture</code>时才显示。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cover_picture: images/banner.jpg</span><br></pre></td></tr></table></figure></p>
+<h4 id="4-3-开启背景粒子"><a href="#4-3-开启背景粒子" class="headerlink" title="4.3 开启背景粒子"></a>4.3 开启背景粒子</h4><p>是否开启背景粒子。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open_bg_particle: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="4-4-开启主页及头部动画"><a href="#4-4-开启主页及头部动画" class="headerlink" title="4.4 开启主页及头部动画"></a>4.4 开启主页及头部动画</h4><p>是否开启主页及头部动画。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open_animation: true</span><br></pre></td></tr></table></figure></p>
+<h4 id="4-5-评论"><a href="#4-5-评论" class="headerlink" title="4.5 评论"></a>4.5 评论</h4><p>支持畅言、disqus。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 畅言，输入appid和appkey</span></span><br><span class="line">changyan_appid: <span class="literal">false</span></span><br><span class="line">changyan_appkey: <span class="literal">false</span></span><br><span class="line"><span class="comment"># 友言，输入id</span></span><br><span class="line">youyan_id: <span class="literal">false</span></span><br><span class="line"><span class="comment"># disqus</span></span><br><span class="line">disqus: <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="4-6-数据统计"><a href="#4-6-数据统计" class="headerlink" title="4.6 数据统计"></a>4.6 数据统计</h4><p>支持站长、百度、google三种数据统计，正确填写配置信息即可。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 站长分析，输入站点id</span></span><br><span class="line">cnzz_analytics: <span class="literal">false</span></span><br><span class="line"><span class="comment"># 百度分析，输入key值</span></span><br><span class="line">baidu_analytics: <span class="literal">false</span></span><br><span class="line"><span class="comment"># google分析</span></span><br><span class="line">google_analytics: <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="4-7-文章基本配置"><a href="#4-7-文章基本配置" class="headerlink" title="4.7 文章基本配置"></a>4.7 文章基本配置</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2017-06-18</span><br><span class="line">categories: First</span><br><span class="line">author: MinHow</span><br><span class="line">tags:</span><br><span class="line">    - First</span><br><span class="line">    - Second</span><br><span class="line">cover_picture: /images/banner.jpg</span><br><span class="line">---</span><br><span class="line"> MinHow-This is a summary</span><br><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>需要注意<code>tags</code>和摘要的写法，不然首页不能正确显示标签和摘要；<br>需要注意<code>tags</code>和摘要的写法，不然首页不能正确显示标签和摘要；</p>
+</blockquote>
+<p>说明：</p>
+<ul>
+<li>需要注意<code>tags</code>和摘要的写法，不然首页不能正确显示标签和摘要；</li>
+<li><code>cover_picture</code>文章封面图，不填默认显示<code>_config.yml</code>配置的图片。</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/08/01/installation-configuration/">MiHo-主题安装和配置详情</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">寒雨</a></p>
+        <p><span>发布时间:</span>2017-08-01, 00:00:00</p>
+        <p><span>最后更新:</span>2018-09-17, 06:56:58</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/08/01/installation-configuration/" title="MiHo-主题安装和配置详情">https://hanyuzheng.github.io/2017/08/01/installation-configuration/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://hanyuzheng.github.io/2017/08/01/installation-configuration/　　作者: 寒雨" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2018/09/17/hello-world/">
+                    Hello World
+                </a>
+            </div>
+        
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-主题简介主题简介主题简介主题简介"><span class="toc-number">1.</span> <span class="toc-text">一. 主题简介主题简介主题简介主题简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-安装"><span class="toc-number">2.</span> <span class="toc-text">二. 安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-安装主题"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 安装主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-更新"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 更新</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-依赖安装"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 依赖安装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Json-content"><span class="toc-number">2.3.1.</span> <span class="toc-text">Json-content</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-站点配置"><span class="toc-number">3.</span> <span class="toc-text">三. 站点配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-启用主题"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 启用主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-网站基本配置"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 网站基本配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-jsonContent配置"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 jsonContent配置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四-主题配置"><span class="toc-number">4.</span> <span class="toc-text">四. 主题配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-属性"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-文章封面图"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 文章封面图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-开启背景粒子"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 开启背景粒子</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-开启主页及头部动画"><span class="toc-number">4.4.</span> <span class="toc-text">4.4 开启主页及头部动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-评论"><span class="toc-number">4.5.</span> <span class="toc-text">4.5 评论</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-数据统计"><span class="toc-number">4.6.</span> <span class="toc-text">4.6 数据统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-7-文章基本配置"><span class="toc-number">4.7.</span> <span class="toc-text">4.7 文章基本配置</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-6 i,
+        .toc-level-6 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"MiHo-主题安装和配置详情　| 寒雨　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/09/17/hello-world/" title="上一篇: Hello World">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/24/Hexo文章置顶/">Hexo文章置顶的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/text/">text</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/Markdown语法/">Markdown语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/01/installation-configuration/">MiHo-主题安装和配置详情</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2018 寒雨
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+    <script src="/js/GithubRepoWidget.js"></script>
+
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+             github: ".github-widget a", 
+            
+             post: ".article-entry a[href], .copyright a[href]", 
+            
+            
+            
+            
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+    <script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
