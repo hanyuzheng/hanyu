@@ -13,6 +13,9 @@
 <meta name="format-detection" content="telephone=no" />
 <meta name="author" content="寒雨" />
 
+<!--prettify代码高亮主题css引入-->
+<link href="/plugins/prettify/prettify.css" rel="stylesheet">
+
 
 
 <meta name="description" content="Unity3D初学者，做做笔记开发游戏的样子">
@@ -55,6 +58,7 @@
 
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
 
 
 <title>Tag: 博客 | 寒雨</title>
@@ -191,7 +195,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/开源项目/">开源项目</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客搭建/">博客搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/开源项目/">开源项目</a></li></ul>
                     </div>
                 </section>
                 
@@ -360,6 +364,15 @@
     <script src="/js/GithubRepoWidget.js"></script>
 
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+<!--prettify代码高亮脚本引入-->
+<script src="/plugins/prettify/prettify.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+ prettyPrint();
+})</script>
+
 
     <script>
         $(document).ready(function() {
