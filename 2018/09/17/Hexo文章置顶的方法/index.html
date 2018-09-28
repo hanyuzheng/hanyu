@@ -18,17 +18,18 @@
 
 
 
-<meta name="description" content="Unity3D初学者，做做笔记开发游戏的样子">
-<meta name="keywords" content="Unity3D,Game,学习笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="寒雨">
-<meta property="og:url" content="https://hanyuzheng.github.io/archives/2015/12/index.html">
+<meta name="description" content="转载自liuxuewne.github.io  Hexo 默认只提供了按发布日期的降序来排序，通过在 Hexo github 的 issue 里找到了解决办法，原理：在 Hexo 生成首页 HTML 时，将 top 值高的文章排在前面，达到置顶功能，以下解决方法在Hexo 3.3.6 上修改相关文件。">
+<meta name="keywords" content="转载,博客搭建">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo文章置顶的方法">
+<meta property="og:url" content="https://hanyuzheng.github.io/2018/09/17/Hexo文章置顶的方法/index.html">
 <meta property="og:site_name" content="寒雨">
-<meta property="og:description" content="Unity3D初学者，做做笔记开发游戏的样子">
+<meta property="og:description" content="转载自liuxuewne.github.io  Hexo 默认只提供了按发布日期的降序来排序，通过在 Hexo github 的 issue 里找到了解决办法，原理：在 Hexo 生成首页 HTML 时，将 top 值高的文章排在前面，达到置顶功能，以下解决方法在Hexo 3.3.6 上修改相关文件。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-09-28T12:04:26.908Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="寒雨">
-<meta name="twitter:description" content="Unity3D初学者，做做笔记开发游戏的样子">
+<meta name="twitter:title" content="Hexo文章置顶的方法">
+<meta name="twitter:description" content="转载自liuxuewne.github.io  Hexo 默认只提供了按发布日期的降序来排序，通过在 Hexo github 的 issue 里找到了解决办法，原理：在 Hexo 生成首页 HTML 时，将 top 值高的文章排在前面，达到置顶功能，以下解决方法在Hexo 3.3.6 上修改相关文件。">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -61,7 +62,7 @@
 
 
 
-<title>Archives: 2015/12 | 寒雨</title>
+<title>Hexo文章置顶的方法 | 寒雨</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -71,8 +72,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -196,7 +197,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PhotoShop/">PhotoShop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Yelee/">Yelee</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客搭建/">博客搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原创/">原创</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/开源项目/">开源项目</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/转载/">转载</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客搭建/">博客搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原创/">原创</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/转载/">转载</a></li></ul>
                     </div>
                 </section>
                 
@@ -273,25 +274,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-Hexo文章置顶的方法" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2015/12/21/common-hexo-commands/" class="archive-article-date">
-      <time datetime="2015-12-21T14:12:04.000Z" itemprop="datePublished">12-21</time>
+    <div class="article-meta">
+      <a href="/2018/09/17/Hexo文章置顶的方法/" class="article-date">
+      <time datetime="2018-09-16T22:51:54.000Z" itemprop="datePublished">2018-09-17</time>
 </a>
 
 
@@ -299,39 +286,291 @@
 
     <script color="0,255,0" opacity='10' zIndex="-1" count="150"  src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js"></script>
     
-        </div>
-         
+
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/21/common-hexo-commands/">Hexo 最常用的几个命令</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo文章置顶的方法
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">530字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  预计阅读时长: </span>
+        <span class="post-count">2分</span>
+      </span>
+    </span>
+    
+  
+    
+      <span id="busuanzi_container_page_pv">
+          &nbsp; | &nbsp;
+          本文阅读: <span id="busuanzi_value_page_pv"></span>次
+        </span>
+  
+  
+</div>
+        
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/术业专攻/">术业专攻</a>
+    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/转载/">转载</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客搭建/">博客搭建</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/转载/">转载</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <blockquote>
+<p><font color="red">转载自</font><a href="https://liuxuewne.github.io/2018/01/29/Hexo-bs-articleTop/" target="_blank" rel="noopener">liuxuewne.github.io</a></p>
+</blockquote>
+<p>Hexo 默认只提供了按发布日期的降序来排序，通过在 Hexo github 的 issue 里找到了解决办法，原理：在 Hexo 生成首页 HTML 时，将 top 值高的文章排在前面，达到置顶功能，以下解决方法在Hexo 3.3.6 上修改相关文件。<br><a id="more"></a></p>
+<h3 id="修改-Hexo-文件夹下的-node-modules-hexo-generator-index-lib-generator-js文件"><a href="#修改-Hexo-文件夹下的-node-modules-hexo-generator-index-lib-generator-js文件" class="headerlink" title="修改 Hexo 文件夹下的 node_modules/hexo-generator-index/lib/generator.js文件"></a>修改 Hexo 文件夹下的 <code>node_modules/hexo-generator-index/lib/generator.js</code>文件</h3><p>找到该文件后，添加以下代码：</p>
+<pre><code class="JavaScript">posts.data = posts.data.sort(function(first, second) {
+   if (first.top &amp;&amp; second.top) { // 两篇文章top都有定义
+        return first.top == second.top ? second.date - first.date : second.top - first.top //若top值一样则按照文章日期降序排, 否则按照top值降序排
+    } else if (first.top &amp;&amp; !second.top) { // 以下是只有一篇文章top有定义，将有top的排在前面
+        return -1;
+    } else if (!first.top &amp;&amp; second.top) {
+        return 1;
+    } else {
+        return second.date - first.date;  // 都没定义top，按照文章日期降序排
+    }
+    });
+</code></pre>
+<p>更改后的完整代码如下：</p>
+<pre><code class="JavaScript">&#39;use strict&#39;;
+var pagination = require(&#39;hexo-pagination&#39;);
+module.exports = function(locals) {
+  var config = this.config;
+  var posts = locals.posts.sort(config.index_generator.order_by);
+    posts.data = posts.data.sort(function(first, second) {
+        if (first.top &amp;&amp; second.top) { // 两篇文章top都有定义
+            return first.top == second.top ? second.date - first.date : second.top - first.top //若top值一样则按照文章日期降序排, 否则按照top值降序排
+        } else if (first.top &amp;&amp; !second.top) { // 以下是只有一篇文章top有定义，将有top的排在前面
+            return -1;
+        } else if (!first.top &amp;&amp; second.top) {
+            return 1;
+        } else {
+            return second.date - first.date;  // 都没定义top，按照文章日期降序排
+        }
+    });
+  var paginationDir = config.pagination_dir || &#39;page&#39;;
+  var path = config.index_generator.path || &#39;&#39;;
+  return pagination(path, posts, {
+    perPage: config.index_generator.per_page,
+    layout: [&#39;index&#39;, &#39;archive&#39;],
+    format: paginationDir + &#39;/%d/&#39;,
+    data: {
+      __index: true
+    }
+  });
+};
+</code></pre>
+<p>不同版本的 Hexo 代码可能有些区别；添加的代码跟版本无关。</p>
+<h3 id="在需要置顶的文章的-front-matter-中添加-top-值"><a href="#在需要置顶的文章的-front-matter-中添加-top-值" class="headerlink" title="在需要置顶的文章的 front-matter 中添加 top 值"></a>在需要置顶的文章的 front-matter 中添加 top 值</h3><p>top 值越大，文章越靠前，举例如下：</p>
+<pre><code class="Markdown">title: miho-主题安装和配置详情
+date: 2017-08-01
+categories: 开源项目
+author: MinHow
+tags:
+    - 博客
+    - 开源项目
+cover_picture: https://cloud.minhow.com/images/miho/theme/github-second.jpg
+top: 1
+</code></pre>
+<p><a href="https://blog.minhow.com/2017/08/20/hexo/article-top/" target="_blank" rel="noopener">原文链接</a></p>
+
+      
+    </div>
+    
   </div>
-</article>
-  
-  
-    </div></section>
   
 
+  
     
 
+
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/09/17/Hexo文章置顶的方法/">Hexo文章置顶的方法</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">寒雨</a></p>
+        <p><span>发布时间:</span>2018-09-17, 06:51:54</p>
+        <p><span>最后更新:</span>2018-09-28, 20:04:26</p>
+        
+            <p><font color=red>因为懒到不想push，所以左边地址无效。</font>
+                <span>更新历史:</span><i class="fa fa-github"></i>
+                <a href="<文章 Blame 地址>/2018-09-17.Hexo文章置顶的方法.md" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
+                <a href="<文章 History 地址>/2018-09-17.Hexo文章置顶的方法.md" title="查看文章有关更新记录" target = "_blank">History</a>
+                <span class="raw"> &nbsp;&nbsp; 文本模式:</span><i class="fa fa-file-text-o"></i>
+                <a href="<文章 Raw 地址>/2018-09-17.Hexo文章置顶的方法.md" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
+            </p>
+        
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/09/17/Hexo文章置顶的方法/" title="Hexo文章置顶的方法">https://hanyuzheng.github.io/2018/09/17/Hexo文章置顶的方法/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://hanyuzheng.github.io/2018/09/17/Hexo文章置顶的方法/　　作者: 寒雨" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2018/09/17/hexo-post-version-control/">
+                    关联 GitHub, 让 Hexo 支持查看文章更新历史
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/09/17/Markdown语法/">
+                    Markdown语法
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#修改-Hexo-文件夹下的-node-modules-hexo-generator-index-lib-generator-js文件"><span class="toc-number">1.</span> <span class="toc-text">修改 Hexo 文件夹下的 node_modules/hexo-generator-index/lib/generator.js文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在需要置顶的文章的-front-matter-中添加-top-值"><span class="toc-number">2.</span> <span class="toc-text">在需要置顶的文章的 front-matter 中添加 top 值</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-6 i,
+        .toc-level-6 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Hexo文章置顶的方法　| 寒雨　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
 </div>
+
+
+
+
+
+
+
+    
+      <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTk1OC8xNjQ4NQ=="  style="width:95%;margin:0 auto ">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/09/17/hexo-post-version-control/" title="上一篇: 关联 GitHub, 让 Hexo 支持查看文章更新历史">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/09/17/Markdown语法/" title="下一篇: Markdown语法">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/26/hexo建站资料汇总/">hexo建站资料汇总</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/common-hexo-commands/">Hexo 最常用的几个命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-post-version-control/">关联 GitHub, 让 Hexo 支持查看文章更新历史</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/Hexo文章置顶的方法/">Hexo文章置顶的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/Markdown语法/">Markdown语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/image-compression/">关于 Yelee 主题背景图的压缩与优化</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/installation-configuration/">MiHo-主题安装和配置详情</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"tagMode":true,"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true,"scale":0.25},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></div>
       <footer id="footer">
     <div class="outer">
         <div id="footer-info">

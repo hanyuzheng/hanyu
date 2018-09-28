@@ -18,18 +18,23 @@
 
 
 
-<meta name="description" content="转载自liuxuewne.github.io  Hexo 默认只提供了按发布日期的降序来排序，通过在 Hexo github 的 issue 里找到了解决办法，原理：在 Hexo 生成首页 HTML 时，将 top 值高的文章排在前面，达到置顶功能，以下解决方法在Hexo 3.3.6 上修改相关文件。">
-<meta name="keywords" content="转载,Markdown">
+<meta name="description" content="转载自moxfive.xyz  前言Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 GitHub 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。">
+<meta name="keywords" content="转载,博客搭建">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo文章置顶的方法">
-<meta property="og:url" content="https://hanyuzheng.github.io/2018/09/24/Hexo文章置顶的方法/index.html">
+<meta property="og:title" content="关联 GitHub, 让 Hexo 支持查看文章更新历史">
+<meta property="og:url" content="https://hanyuzheng.github.io/2018/09/17/hexo-post-version-control/index.html">
 <meta property="og:site_name" content="寒雨">
-<meta property="og:description" content="转载自liuxuewne.github.io  Hexo 默认只提供了按发布日期的降序来排序，通过在 Hexo github 的 issue 里找到了解决办法，原理：在 Hexo 生成首页 HTML 时，将 top 值高的文章排在前面，达到置顶功能，以下解决方法在Hexo 3.3.6 上修改相关文件。">
+<meta property="og:description" content="转载自moxfive.xyz  前言Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 GitHub 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-26T15:30:05.042Z">
+<meta property="og:image" content="https://hanyuzheng.github.io/resources/version-control.png">
+<meta property="og:image" content="https://hanyuzheng.github.io/resources/Blame.png">
+<meta property="og:image" content="https://hanyuzheng.github.io/resources/History.png">
+<meta property="og:image" content="https://hanyuzheng.github.io/resources/Raw.png">
+<meta property="og:updated_time" content="2018-09-28T12:04:24.398Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo文章置顶的方法">
-<meta name="twitter:description" content="转载自liuxuewne.github.io  Hexo 默认只提供了按发布日期的降序来排序，通过在 Hexo github 的 issue 里找到了解决办法，原理：在 Hexo 生成首页 HTML 时，将 top 值高的文章排在前面，达到置顶功能，以下解决方法在Hexo 3.3.6 上修改相关文件。">
+<meta name="twitter:title" content="关联 GitHub, 让 Hexo 支持查看文章更新历史">
+<meta name="twitter:description" content="转载自moxfive.xyz  前言Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 GitHub 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。">
+<meta name="twitter:image" content="https://hanyuzheng.github.io/resources/version-control.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -62,7 +67,7 @@
 
 
 
-<title>Hexo文章置顶的方法 | 寒雨</title>
+<title>关联 GitHub, 让 Hexo 支持查看文章更新历史 | 寒雨</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -197,7 +202,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub/">GitHub</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PhotoShop/">PhotoShop</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Yelee/">Yelee</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客搭建/">博客搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原创/">原创</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/开源项目/">开源项目</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/转载/">转载</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客搭建/">博客搭建</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/原创/">原创</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/转载/">转载</a></li></ul>
                     </div>
                 </section>
                 
@@ -274,11 +279,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-Hexo文章置顶的方法" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-hexo-post-version-control" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/09/24/Hexo文章置顶的方法/" class="article-date">
-      <time datetime="2018-09-24T08:45:54.000Z" itemprop="datePublished">2018-09-24</time>
+      <a href="/2018/09/17/hexo-post-version-control/" class="article-date">
+      <time datetime="2018-09-16T22:51:54.000Z" itemprop="datePublished">2018-09-17</time>
 </a>
 
 
@@ -286,6 +291,7 @@
 
     <script color="0,255,0" opacity='10' zIndex="-1" count="150"  src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js"></script>
     
+
     </div>
   
   <div class="article-inner">
@@ -297,7 +303,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo文章置顶的方法
+      关联 GitHub, 让 Hexo 支持查看文章更新历史
     </h1>
   
 
@@ -307,7 +313,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">530字</span>
+        <span class="post-count">1.1k字</span>
       </span>
     </span>
 
@@ -316,7 +322,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  预计阅读时长: </span>
-        <span class="post-count">2分</span>
+        <span class="post-count">5分</span>
       </span>
     </span>
     
@@ -335,13 +341,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Markdown/">Markdown</a>
+    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/转载/">转载</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客搭建/">博客搭建</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/转载/">转载</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -352,88 +358,96 @@
       
           
         <blockquote>
-<p><font color="red">转载自</font><a href="https://liuxuewne.github.io/2018/01/29/Hexo-bs-articleTop/" target="_blank" rel="noopener">liuxuewne.github.io</a></p>
+<p><font color="red">转载自</font><a href="http://moxfive.xyz/2016/01/10/hexo-post-version-control/" target="_blank" rel="noopener">moxfive.xyz</a></p>
 </blockquote>
-<p>Hexo 默认只提供了按发布日期的降序来排序，通过在 Hexo github 的 issue 里找到了解决办法，原理：在 Hexo 生成首页 HTML 时，将 top 值高的文章排在前面，达到置顶功能，以下解决方法在Hexo 3.3.6 上修改相关文件。<br><a id="more"></a></p>
-<h3 id="修改-Hexo-文件夹下的-node-modules-hexo-generator-index-lib-generator-js文件"><a href="#修改-Hexo-文件夹下的-node-modules-hexo-generator-index-lib-generator-js文件" class="headerlink" title="修改 Hexo 文件夹下的 node_modules/hexo-generator-index/lib/generator.js文件"></a>修改 Hexo 文件夹下的 <code>node_modules/hexo-generator-index/lib/generator.js</code>文件</h3><p>找到该文件后，添加以下代码：</p>
-<pre><code class="JavaScript">posts.data = posts.data.sort(function(first, second) {
-   if (first.top &amp;&amp; second.top) { // 两篇文章top都有定义
-        return first.top == second.top ? second.date - first.date : second.top - first.top //若top值一样则按照文章日期降序排, 否则按照top值降序排
-    } else if (first.top &amp;&amp; !second.top) { // 以下是只有一篇文章top有定义，将有top的排在前面
-        return -1;
-    } else if (!first.top &amp;&amp; second.top) {
-        return 1;
-    } else {
-        return second.date - first.date;  // 都没定义top，按照文章日期降序排
-    }
-    });
+<p></p><h2 id="intro">前言</h2>Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 <a href="https://github.com/MOxFIVE/Markdown-Archives-Backup" target="_blank" rel="noopener">GitHub</a> 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。<p></p>
+<a id="more"></a>
+<p><img src="/resources/version-control.png" alt="version-control"></p>
+<h2 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h2><h3 id="文件命名"><a href="#文件命名" class="headerlink" title="文件命名"></a>文件命名</h3><ul>
+<li>为了便于文章识别和自动关联文件，文章 Markdown 的文件名应该符合规范。</li>
+<li>建议使用 文章建立日期.固定链接 <code>YY-MM-DD.permalink.md</code> 的形式。</li>
+<li>在文章 [Front-matter] 中设置固定链接 permalink，然后填写文件名，例如本文完整文件名为 <code>2016-01-10.hexo-post-version-control.md</code></li>
+<li>为什么不使用文章标题作为文件名:<blockquote>
+<p>一是因为标题偶尔会变动，修改相对麻烦；二是标题可能包含不能用作文件名的符号，导致关联出错。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="文件备份"><a href="#文件备份" class="headerlink" title="文件备份"></a>文件备份</h3><ul>
+<li>把 <code>hexo/sources/_posts</code> 文件夹同步备份到你的 GitHub 上，不熟悉 Git 的可使用 GitHub Desktop 操作，具体方法自行搜索。</li>
+</ul>
+<h2 id="代码添加"><a href="#代码添加" class="headerlink" title="代码添加"></a>代码添加</h2><p>把下面 EJS 代码添加到主题文章模板合适位置中，<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="noopener">Yelee</a> 主题是添加在文末版权区中。参考备份文件在 Github 的链接修改前半部分地址。</p>
+<pre><code>&lt;% if (post.backup != false){ %&gt;
+    &lt;p&gt;
+        &lt;span&gt;更新历史:&lt;&#x2F;span&gt;&lt;i class=&quot;fa fa-github&quot;&gt;&lt;&#x2F;i&gt;
+        &lt;a href=&quot;&lt;文章 Blame 地址&gt;&#x2F;&lt;%= post.date.format(&quot;YYYY-MM-DD&quot;) %&gt;.&lt;%= post.slug %&gt;.md&quot; title=&quot;顺序查看文章各部分修改记录&quot; target = &quot;_blank&quot;&gt;Blame&lt;&#x2F;a&gt;,
+        &lt;a href=&quot;&lt;文章 History 地址&gt;&#x2F;&lt;%= post.date.format(&quot;YYYY-MM-DD&quot;) %&gt;.&lt;%= post.slug %&gt;.md&quot; title=&quot;查看文章有关更新记录&quot; target = &quot;_blank&quot;&gt;History&lt;&#x2F;a&gt;&lt;span class=&quot;raw&quot;&gt;文本模式:&lt;&#x2F;span&gt;&lt;i class=&quot;fa fa-file-text-o&quot;&gt;&lt;&#x2F;i&gt;
+        &lt;a href=&quot;&lt;文章 Raw 地址&gt;&#x2F;&lt;%= post.date.format(&quot;YYYY-MM-DD&quot;) %&gt;.&lt;%= post.slug %&gt;.md&quot; title=&quot;查看 &amp; 下载文章 Markdown 原始文本&quot; target = &quot;_blank&quot;&gt; .md Raw&lt;&#x2F;a&gt;
+    &lt;&#x2F;p&gt;
+&lt;% } %&gt;</code></pre>
+<h2 id="代码简析"><a href="#代码简析" class="headerlink" title="代码简析"></a>代码简析</h2><pre><code class="erb">&lt;!-- 不设置 backup: false 则默认显示 --&gt;
+&lt;% if (post.backup != false){ %&gt;
+    &lt;p&gt; 
+        &lt;span&gt;更新历史:&lt;/span&gt;&lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt;
+        &lt;!-- 不同功能替换前面超链接即可，文件名不变 --&gt;
+        &lt;!-- 文件名生成: &lt;%= post.date.format(&quot;YYYY-MM-DD&quot;) %&gt;.&lt;%= post.slug %&gt; --&gt;
+        &lt;a href=&quot;&lt;文章 Blame 地址&gt;/&lt;%= post.date.format(&quot;YYYY-MM-DD&quot;) %&gt;.&lt;%= post.slug %&gt;.md&quot; title=&quot;顺序查看文章各部分修改记录&quot; target = &quot;_blank&quot;&gt;Blame&lt;/a&gt;,
+        &lt;a href=&quot;&lt;文章 History 地址&gt;/&lt;%= post.date.format(&quot;YYYY-MM-DD&quot;) %&gt;.&lt;%= post.slug %&gt;.md&quot; title=&quot;查看文章有关更新记录&quot; target = &quot;_blank&quot;&gt;History&lt;/a&gt;&lt;span class=&quot;raw&quot;&gt;文本模式:&lt;/span&gt;&lt;i class=&quot;fa fa-file-text-o&quot;&gt;&lt;/i&gt;
+        &lt;a href=&quot;&lt;文章 Raw 地址&gt;/&lt;%= post.date.format(&quot;YYYY-MM-DD&quot;) %&gt;.&lt;%= post.slug %&gt;.md&quot; title=&quot;查看 &amp; 下载文章 Markdown 原始文本&quot; target = &quot;_blank&quot;&gt; .md Raw&lt;/a&gt;
+    &lt;/p&gt;
+&lt;% } %&gt;
 </code></pre>
-<p>更改后的完整代码如下：</p>
-<pre><code class="JavaScript">&#39;use strict&#39;;
-var pagination = require(&#39;hexo-pagination&#39;);
-module.exports = function(locals) {
-  var config = this.config;
-  var posts = locals.posts.sort(config.index_generator.order_by);
-    posts.data = posts.data.sort(function(first, second) {
-        if (first.top &amp;&amp; second.top) { // 两篇文章top都有定义
-            return first.top == second.top ? second.date - first.date : second.top - first.top //若top值一样则按照文章日期降序排, 否则按照top值降序排
-        } else if (first.top &amp;&amp; !second.top) { // 以下是只有一篇文章top有定义，将有top的排在前面
-            return -1;
-        } else if (!first.top &amp;&amp; second.top) {
-            return 1;
-        } else {
-            return second.date - first.date;  // 都没定义top，按照文章日期降序排
-        }
-    });
-  var paginationDir = config.pagination_dir || &#39;page&#39;;
-  var path = config.index_generator.path || &#39;&#39;;
-  return pagination(path, posts, {
-    perPage: config.index_generator.per_page,
-    layout: [&#39;index&#39;, &#39;archive&#39;],
-    format: paginationDir + &#39;/%d/&#39;,
-    data: {
-      __index: true
-    }
-  });
-};
-</code></pre>
-<p>不同版本的 Hexo 代码可能有些区别；添加的代码跟版本无关。</p>
-<h3 id="在需要置顶的文章的-front-matter-中添加-top-值"><a href="#在需要置顶的文章的-front-matter-中添加-top-值" class="headerlink" title="在需要置顶的文章的 front-matter 中添加 top 值"></a>在需要置顶的文章的 front-matter 中添加 top 值</h3><p>top 值越大，文章越靠前，举例如下：</p>
-<pre><code class="Markdown">title: miho-主题安装和配置详情
-date: 2017-08-01
-categories: 开源项目
-author: MinHow
-tags:
-    - 博客
-    - 开源项目
-cover_picture: https://cloud.minhow.com/images/miho/theme/github-second.jpg
-top: 1
-</code></pre>
-<p><a href="https://blog.minhow.com/2017/08/20/hexo/article-top/" target="_blank" rel="noopener">原文链接</a></p>
+<h3 id="Blame"><a href="#Blame" class="headerlink" title="Blame"></a>Blame</h3><ul>
+<li>顺序列出文章内容，左侧显示各部分 commit 信息，最后修改时间等。<br><img src="/resources/Blame.png" alt="Blame"></li>
+</ul>
+<h3 id="History"><a href="#History" class="headerlink" title="History"></a>History</h3><ul>
+<li>列出与该文件相关的更新记录 (commit)，按路径匹配。我一般直接就用提交时间作为 commit 信息了，想要更直观查看变动的可以在提交时书写更完善的 commit 信息。</li>
+</ul>
+<p><img src="/resources/History.png" alt="History"></p>
+<h3 id="md-Raw"><a href="#md-Raw" class="headerlink" title=".md Raw"></a>.md Raw</h3><ul>
+<li>在线查看或者直接下载文章原始 Markdown 文本。<br><img src="/resources/Raw.png" alt="Raw"></li>
+</ul>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<ul>
+<li>这是半自动的版本控制，需要手动把文章同步备份到 GitHub；</li>
+<li>代码部分的变动基于 <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="noopener">Yelee</a> 主题，其它主题用户可以参考 <a href="/2015/10/25/hexo-tag-cloud/">另一篇文章</a> 的方法，自行添加代码到合适位置；</li>
+<li>小图标来自 Font Awesome，需主题支持才会正常显示；</li>
+<li>本文不详解 Hexo 基础知识，有设置项不理解的请先阅读 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo 官方帮助文档</a>。</li>
+</ul>
+</blockquote>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong>GitHub Desktop</strong>: <a href="https://desktop.github.com/" target="_blank" rel="noopener">https://desktop.github.com/</a></li>
+<li><strong>Font Awesome</strong>: <a href="http://fontawesome.io/" target="_blank" rel="noopener">http://fontawesome.io/</a></li>
+<li><strong>Hexo 使用文档</strong>: <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></li>
+<li><strong><em>Hexo 文章版本控制</em></strong>  by <strong>MOxFIVE</strong> on <code>2016/01/10</code>: <a href="https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235" target="_blank" rel="noopener">https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235</a></li>
+</ol>
 
       
     </div>
     
   </div>
   
+
+  
     
+
+
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/09/24/Hexo文章置顶的方法/">Hexo文章置顶的方法</a></p>
+        <p><span>本文标题:</span><a href="/2018/09/17/hexo-post-version-control/">关联 GitHub, 让 Hexo 支持查看文章更新历史</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">寒雨</a></p>
-        <p><span>发布时间:</span>2018-09-24, 16:45:54</p>
-        <p><span>最后更新:</span>2018-09-26, 23:30:05</p>
+        <p><span>发布时间:</span>2018-09-17, 06:51:54</p>
+        <p><span>最后更新:</span>2018-09-28, 20:04:24</p>
         
-            <p>
+            <p><font color=red>因为懒到不想push，所以左边地址无效。</font>
                 <span>更新历史:</span><i class="fa fa-github"></i>
-                <a href="Hexo文章置顶的方法.md" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
-                <a href="Hexo文章置顶的方法.md" title="查看文章有关更新记录" target = "_blank">History</a>
+                <a href="<文章 Blame 地址>/2018-09-17.hexo-post-version-control.md" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
+                <a href="<文章 History 地址>/2018-09-17.hexo-post-version-control.md" title="查看文章有关更新记录" target = "_blank">History</a>
                 <span class="raw"> &nbsp;&nbsp; 文本模式:</span><i class="fa fa-file-text-o"></i>
-                <a href="Hexo文章置顶的方法.md" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
+                <a href="<文章 Raw 地址>/2018-09-17.hexo-post-version-control.md" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
             </p>
         
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/09/24/Hexo文章置顶的方法/" title="Hexo文章置顶的方法">https://hanyuzheng.github.io/2018/09/24/Hexo文章置顶的方法/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://hanyuzheng.github.io/2018/09/24/Hexo文章置顶的方法/　　作者: 寒雨" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/09/17/hexo-post-version-control/" title="关联 GitHub, 让 Hexo 支持查看文章更新历史">https://hanyuzheng.github.io/2018/09/17/hexo-post-version-control/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://hanyuzheng.github.io/2018/09/17/hexo-post-version-control/　　作者: 寒雨" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -446,15 +460,15 @@ top: 1
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2018/09/26/hexo建站资料汇总/">
-                    hexo建站资料汇总
+                <a href="/2018/09/17/common-hexo-commands/">
+                    Hexo 最常用的几个命令
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/09/17/Markdown语法/">
-                    Markdown语法
+                <a href="/2018/09/17/Hexo文章置顶的方法/">
+                    Hexo文章置顶的方法
                 </a>
             </div>
         
@@ -466,7 +480,7 @@ top: 1
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#修改-Hexo-文件夹下的-node-modules-hexo-generator-index-lib-generator-js文件"><span class="toc-number">1.</span> <span class="toc-text">修改 Hexo 文件夹下的 node_modules/hexo-generator-index/lib/generator.js文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在需要置顶的文章的-front-matter-中添加-top-值"><span class="toc-number">2.</span> <span class="toc-text">在需要置顶的文章的 front-matter 中添加 top 值</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#intro"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文件处理"><span class="toc-number">2.</span> <span class="toc-text">文件处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#文件命名"><span class="toc-number">2.1.</span> <span class="toc-text">文件命名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件备份"><span class="toc-number">2.2.</span> <span class="toc-text">文件备份</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码添加"><span class="toc-number">3.</span> <span class="toc-text">代码添加</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码简析"><span class="toc-number">4.</span> <span class="toc-text">代码简析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Blame"><span class="toc-number">4.1.</span> <span class="toc-text">Blame</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#History"><span class="toc-number">4.2.</span> <span class="toc-text">History</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#md-Raw"><span class="toc-number">4.3.</span> <span class="toc-text">.md Raw</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">5.</span> <span class="toc-text">后记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相关链接"><span class="toc-number">6.</span> <span class="toc-text">相关链接</span></a></li></ol>
         
     </div>
     <style>
@@ -502,7 +516,7 @@ top: 1
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Hexo文章置顶的方法　| 寒雨　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"关联 GitHub, 让 Hexo 支持查看文章更新历史　| 寒雨　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -541,7 +555,7 @@ top: 1
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/09/26/hexo建站资料汇总/" title="上一篇: hexo建站资料汇总">
+            <a href="/2018/09/17/common-hexo-commands/" title="上一篇: Hexo 最常用的几个命令">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -549,13 +563,13 @@ top: 1
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/09/17/Markdown语法/" title="下一篇: Markdown语法">
+            <a href="/2018/09/17/Hexo文章置顶的方法/" title="下一篇: Hexo文章置顶的方法">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/26/hexo建站资料汇总/">hexo建站资料汇总</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/24/Hexo文章置顶的方法/">Hexo文章置顶的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/Markdown语法/">Markdown语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/01/installation-configuration/">MiHo-主题安装和配置详情</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/17/image-compression/">关于 Yelee 主题背景图的压缩与优化</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/10/hexo-post-version-control/">关联 GitHub, 让 Hexo 支持查看文章更新历史</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/21/common-hexo-commands/">Hexo 最常用的几个命令</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/09/26/hexo建站资料汇总/">hexo建站资料汇总</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/common-hexo-commands/">Hexo 最常用的几个命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-post-version-control/">关联 GitHub, 让 Hexo 支持查看文章更新历史</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/Hexo文章置顶的方法/">Hexo文章置顶的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/Markdown语法/">Markdown语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/image-compression/">关于 Yelee 主题背景图的压缩与优化</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/installation-configuration/">MiHo-主题安装和配置详情</a></li></ul>
 
 
 
