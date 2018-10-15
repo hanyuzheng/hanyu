@@ -18,18 +18,18 @@
 
 
 
-<meta name="description" content="转载自云风的 BLOG  int i=0; console.writeline(sss);  今天读了一篇 《守望先锋》架构设计与网络同步 。这是根据 GDC 2017 上的演讲 Overwatch Gameplay Architecture and Netcode 视频翻译而来的，所以并没有原文。由于是个一小时的演讲，不可能讲得面面俱到，所以理解起来有些困难，我反复读了三遍，然后把英文视频找来">
+<meta name="description" content="转载自云风的 BLOG  int i=0; Console.Writeline(sss);  今天读了一篇 《守望先锋》架构设计与网络同步 。这是根据 GDC 2017 上的演讲 Overwatch Gameplay Architecture and Netcode 视频翻译而来的，所以并没有原文。由于是个一小时的演讲，不可能讲得面面俱到，所以理解起来有些困难，我反复读了三遍，然后把英文视频找来">
 <meta name="keywords" content="转载">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈《守望先锋》中的 ECS 构架">
 <meta property="og:url" content="https://hanyuzheng.github.io/2018/10/15/浅谈《守望先锋》中的 ECS 构架/index.html">
 <meta property="og:site_name" content="寒雨">
-<meta property="og:description" content="转载自云风的 BLOG  int i=0; console.writeline(sss);  今天读了一篇 《守望先锋》架构设计与网络同步 。这是根据 GDC 2017 上的演讲 Overwatch Gameplay Architecture and Netcode 视频翻译而来的，所以并没有原文。由于是个一小时的演讲，不可能讲得面面俱到，所以理解起来有些困难，我反复读了三遍，然后把英文视频找来">
+<meta property="og:description" content="转载自云风的 BLOG  int i=0; Console.Writeline(sss);  今天读了一篇 《守望先锋》架构设计与网络同步 。这是根据 GDC 2017 上的演讲 Overwatch Gameplay Architecture and Netcode 视频翻译而来的，所以并没有原文。由于是个一小时的演讲，不可能讲得面面俱到，所以理解起来有些困难，我反复读了三遍，然后把英文视频找来">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-15T09:59:38.200Z">
+<meta property="og:updated_time" content="2018-10-15T10:01:33.694Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈《守望先锋》中的 ECS 构架">
-<meta name="twitter:description" content="转载自云风的 BLOG  int i=0; console.writeline(sss);  今天读了一篇 《守望先锋》架构设计与网络同步 。这是根据 GDC 2017 上的演讲 Overwatch Gameplay Architecture and Netcode 视频翻译而来的，所以并没有原文。由于是个一小时的演讲，不可能讲得面面俱到，所以理解起来有些困难，我反复读了三遍，然后把英文视频找来">
+<meta name="twitter:description" content="转载自云风的 BLOG  int i=0; Console.Writeline(sss);  今天读了一篇 《守望先锋》架构设计与网络同步 。这是根据 GDC 2017 上的演讲 Overwatch Gameplay Architecture and Netcode 视频翻译而来的，所以并没有原文。由于是个一小时的演讲，不可能讲得面面俱到，所以理解起来有些困难，我反复读了三遍，然后把英文视频找来">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -359,8 +359,8 @@
         <blockquote>
 <p><font color="red">转载自</font><a href="https://blog.codingnow.com/2017/06/overwatch_ecs.html" target="_blank" rel="noopener">云风的 BLOG</a></p>
 </blockquote>
-<pre><code class="c">int i=0;
-console.writeline(sss);
+<pre><code class="cs">int i=0;
+Console.Writeline(sss);
 </code></pre>
 <p>今天读了一篇 《守望先锋》架构设计与网络同步 。这是根据 GDC 2017 上的演讲 Overwatch Gameplay Architecture and Netcode 视频翻译而来的，所以并没有原文。由于是个一小时的演讲，不可能讲得面面俱到，所以理解起来有些困难，我反复读了三遍，然后把英文视频找来（订阅 GDC Vault 可以看，有版权）看了一遍，大致理解了 ECS 这个框架。写这篇 Blog 记录一下我对 ECS 的理解，结合我自己这些年做游戏开发的经验，可能并非等价于原演讲中的思想。</p>
 <a id="more"></a>
@@ -522,7 +522,7 @@ console.writeline(sss);
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/10/15/浅谈《守望先锋》中的 ECS 构架/">浅谈《守望先锋》中的 ECS 构架</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/02/dunity-Custom-Editor/">Unity 编辑器扩展</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/02/dcs-Reflection-Attribute/">C#反射和特性</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/29/dshader-rendering-pipeline/">Shader渲染流水线</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/26/hexo-build-data-summary/">Hexo 建站资料汇总</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-article-set-top/">Hexo文章置顶的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-browsersync/">Hexo 页面自动刷新与移动端调试</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-common-commands/">Hexo 最常用的几个命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-installation-configuration/">MiHo-主题安装和配置详情</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-post-version-control/">关联 GitHub, 让 Hexo 支持查看文章更新历史</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/syntax-markdown/">Markdown语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-image-compression/">关于 Yelee 主题背景图的压缩与优化</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/10/15/浅谈《守望先锋》中的 ECS 构架/">浅谈《守望先锋》中的 ECS 构架</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/02/dunity-Custom-Editor/">Unity 编辑器扩展</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/02/dcs-Reflection-Attribute/">C#反射和特性</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/29/dshader-rendering-pipeline/">Shader渲染流水线</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/26/hexo-build-data-summary/">Hexo 建站资料汇总</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-article-set-top/">Hexo文章置顶的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-browsersync/">Hexo 页面自动刷新与移动端调试</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-common-commands/">Hexo 最常用的几个命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-post-version-control/">关联 GitHub, 让 Hexo 支持查看文章更新历史</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-installation-configuration/">MiHo-主题安装和配置详情</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/syntax-markdown/">Markdown语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/hexo-image-compression/">关于 Yelee 主题背景图的压缩与优化</a></li></ul>
 
 
 
