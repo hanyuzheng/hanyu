@@ -881,10 +881,10 @@
 
 
   
-    <article id="post-hexo-browsersync" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-hexo-image-compression" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/09/17/hexo-browsersync/" class="article-date">
+      <a href="/2018/09/17/hexo-image-compression/" class="article-date">
       <time datetime="2018-09-16T22:51:54.000Z" itemprop="datePublished">2018-09-17</time>
 </a>
 
@@ -905,7 +905,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/hexo-browsersync/">Hexo 页面自动刷新与移动端调试</a>
+      <a class="article-title" href="/2018/09/17/hexo-image-compression/">关于 Yelee 主题背景图的压缩与优化</a>
     </h1>
   
 
@@ -915,7 +915,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">604字</span>
+        <span class="post-count">536字</span>
       </span>
     </span>
 
@@ -924,7 +924,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  预计阅读时长: </span>
-        <span class="post-count">2分</span>
+        <span class="post-count">1分</span>
       </span>
     </span>
     
@@ -938,9 +938,9 @@
       
           
               <blockquote>
-<p><font color="red">转载自</font><a href="http://moxfive.xyz/2016/03/27/hexo-browsersync/" target="_blank" rel="noopener">moxfive.xyz</a></p>
+<p><font color="red">转载自</font><a href="http://moxfive.xyz/2016/05/17/image-compression/" target="_blank" rel="noopener">moxfive.xyz</a></p>
 </blockquote>
-<p></p><h2 id="intro">前言</h2>经常本地调试 Hexo 主题, 如果有工具能监视文件更改幷自动刷新页面，那一定能提高不少效率，<a href="http://www.browsersync.cn/" target="_blank" rel="noopener">Browsersync</a> 就是这样一款浏览器同步测试工具。<p></p>
+<p>　　目前主题里可以使用多张随机大图作背景，如果不做好图片压缩和优化，可能会严重影响网站流畅性。下面简单介绍两种比较便捷的优化方案。</p>
           
       
     </div>
@@ -960,7 +960,7 @@
 
       
         <p class="article-more-link">
-          <a href="/2018/09/17/hexo-browsersync/#more">阅读全文 >></a>
+          <a href="/2018/09/17/hexo-image-compression/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -1186,10 +1186,10 @@
 
 
   
-    <article id="post-hexo-image-compression" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-hexo-post-version-control" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/09/17/hexo-image-compression/" class="article-date">
+      <a href="/2018/09/17/hexo-post-version-control/" class="article-date">
       <time datetime="2018-09-16T22:51:54.000Z" itemprop="datePublished">2018-09-17</time>
 </a>
 
@@ -1210,7 +1210,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/hexo-image-compression/">关于 Yelee 主题背景图的压缩与优化</a>
+      <a class="article-title" href="/2018/09/17/hexo-post-version-control/">关联 GitHub, 让 Hexo 支持查看文章更新历史</a>
     </h1>
   
 
@@ -1220,7 +1220,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">536字</span>
+        <span class="post-count">1.1k字</span>
       </span>
     </span>
 
@@ -1229,7 +1229,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  预计阅读时长: </span>
-        <span class="post-count">1分</span>
+        <span class="post-count">5分</span>
       </span>
     </span>
     
@@ -1243,9 +1243,9 @@
       
           
               <blockquote>
-<p><font color="red">转载自</font><a href="http://moxfive.xyz/2016/05/17/image-compression/" target="_blank" rel="noopener">moxfive.xyz</a></p>
+<p><font color="red">转载自</font><a href="http://moxfive.xyz/2016/01/10/hexo-post-version-control/" target="_blank" rel="noopener">moxfive.xyz</a></p>
 </blockquote>
-<p>　　目前主题里可以使用多张随机大图作背景，如果不做好图片压缩和优化，可能会严重影响网站流畅性。下面简单介绍两种比较便捷的优化方案。</p>
+<p></p><h2 id="intro">前言</h2>Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 <a href="https://github.com/MOxFIVE/Markdown-Archives-Backup" target="_blank" rel="noopener">GitHub</a> 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。<p></p>
           
       
     </div>
@@ -1265,7 +1265,7 @@
 
       
         <p class="article-more-link">
-          <a href="/2018/09/17/hexo-image-compression/#more">阅读全文 >></a>
+          <a href="/2018/09/17/hexo-post-version-control/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
